@@ -16,4 +16,11 @@ const argv = yargs
   .argv;
 
 let address = encodeURIComponent(argv.address);
-geocode.geocodeAddress(address);
+geocode.geocodeAddress(address, (errorMessage, results) => {
+  if (errorMessage) {
+    console.log(errorMessage);
+  } else {
+    // pretty print body as JSON with 2 spaces
+    console.log(JSON.stringify(results, undefined, 2));
+  }
+});
