@@ -10,9 +10,9 @@ I built this app following [The Complete Node.js Developer Course (2nd Edition)]
 
 Clone or download the repo to a local machine and your project folder. 
 
-To run the application, Node.js needs to be installed. If you don’t have Node.js installed, then go ahead and install it (see available downloads [here](https://nodejs.org/en/download/).
+To run the application, Node.js needs to be installed. If you don’t have Node.js installed, then go ahead and install it - see available downloads [here](https://nodejs.org/en/download/).
 
-To install dependencies, run `npm install` from your project folder.
+To install dependencies, run `npm install` in the Terminal from the root of your project folder. This assumes you have cloned / downloaded the repo and have the `package.json` file. NPM will install the dependencies named in this file. 
 
 ## Run
 
@@ -37,13 +37,24 @@ Powered by Dark Sky => https://darksky.net/poweredby/
 And another example:
 
 ```bash
-$ node app.js -a “vancouver”
+$ node app.js --address “vancouver”
 Vancouver, BC, Canada
 ---
 The temperature is 4c.
 The temperature feels like 2c.
 ---
 Powered by Dark Sky => https://darksky.net/poweredby/
+```
+
+And one last example:
+
+```bash
+$ node app.js -a berlin
+Berlin, Germany
+---
+The temperature is 15c.
+The temperature feels like 15c.
+---
 ```
 
 For help, run this command:
