@@ -62,3 +62,23 @@ For help, run this command:
 ```bash
 $ node app.js -h
 ```
+
+***
+
+## Alternatively…
+
+The file `app-promise.js` has the exact functionality but is in one file (plus the use of the helper function to convert fahrenheit to celsius). 
+
+It uses [Axios](https://www.npmjs.com/package/axios) and ES6 Promises to deliver the same functionality.
+
+To run:
+
+```bash
+$ node app-promise.js -a “london”
+London, UK
+---
+The temperature is 19c.
+The temperature feels like 19c.
+---
+Powered by Dark Sky => https://darksky.net/poweredby/
+```
