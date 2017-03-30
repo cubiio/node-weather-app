@@ -1,0 +1,22 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Learning some Node.js via Udemy course 'Complete Node.js Developer'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cubiio/node-weather-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cubiio/node-weather-app/issues"
+  },
+  "homepage": "https://github.com/cubiio/node-weather-app#readme",
+  "dependencies": {
+    "request": "^2.73.0"
+  }
+}
