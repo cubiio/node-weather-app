@@ -31,8 +31,8 @@ geocode.geocodeAddress(address, (errorMessage, results) => {
             } else {
                 // console.log(JSON.stringify(weatherResults, undefined, 2));
                 console.log('---');
-                console.log(`The temperature is ${celcius.convertFtoC(weatherResults.temperature)} C.`);
-                console.log(`The temperature feels like ${celcius.convertFtoC(weatherResults.apparentTemperature)} C.`);
+                console.log(`The temperature is ${celcius.convertFtoC(weatherResults.temperature)}c.`);
+                console.log(`The temperature feels like ${celcius.convertFtoC(weatherResults.apparentTemperature)}c.`);
                 console.log('---');
                 console.log(`Powered by Dark Sky => https://darksky.net/poweredby/`);
             }
