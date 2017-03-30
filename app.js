@@ -14,8 +14,16 @@ const argv = yargs
   .alias('help', 'h')
   .argv;
 
+// console.log(argv);
+
+// let address = argv.address;
+// console.log(address);
+let URIaddress = encodeURIComponent(argv.address);
+// console.log(URIaddress);
+let url = `https://maps.googleapis.com/maps/api/geocode/json?address=${URIaddress}`;
+
 request({
-  url: 'https://maps.googleapis.com/maps/api/geocode/json?address=10%20downing%20street%20london',
+  url: url,
   json: true
 }, (error, response, body) => {
   // console.log(JSON.stringify(body, undefined, 2));
